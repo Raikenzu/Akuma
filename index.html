@@ -1,122 +1,249 @@
 <style type="text/css">
-.pfor { display: none; }
-#profile { background-color: transparent; border: none; }
-
+.pfor {display: none;}
+a {text-decoration: none;}
+ 
+/*-Setup-*/
+ 
+#profile {border: 0px; background-color: transparent;}
+ 
 body {
-background-image: url(""); background-color: #000000; font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:red;
-}
+background-color: rgb(14, 51, 84);
+background-image:url();
+background-size: %;
+background-attachment: fixed;}
+body, a:hover {cursor: url(http://www.totallylayouts.com/cursors/random/tiny_cursor.png);}
+ 
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-thumb { background-color: #cd7e17;}
+::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,3);}
+ 
+ 
+ 
+/*-Content-*/
+ 
+#content {
+position: absolute;
+top: 61.3vh;
+left: 68vh;
+height: 300px;
+width: 616px;
+background-color: );
+opacity: 1px;
+background: url('https://www.transparenttextures.com/patterns/white-wall-3-2.png');
+border: 1px solid #000;
+border-radius: 10px;
+overflow-y: hidden;}
+ 
+#OOC{
+position: absolute;
+top: 0.5vh;
+left: 15.5vh;
+height: 50px;
+width: 450px;
+font-family: Bitter;
+font-size: 10px;
+color: #C0C0C0;
+text-align: center;
+line-height: 15.6px;
+letter-spacing: 1px;
+word-spacing: 2px;
+margin-bottom: 35px;
+padding: 8px;
+overflow-y: hidden;}
 
-b, strong { font-family: Helvetica; font-size: 10px;line-height: 15px; font-weight: bold;
-color: #551111;}
-	u { font-family: Georgia; font-size:12px; color:#990000; border-bottom:1px dashed #555555; text-decoration:none;}
-
-	i, em {color:#aa2222; font-family: Arial; font-size:12px;}
-
-#akuma {
-position:fixed;
-height: 322px;
-width:400px;
-overflow:hidden;
-left:700px;
-top:100px;
-border: 1px #000000 solid;
-background-color: #;
-opacity:0.2;
-filter:alpha(opacity=40);
-}
-
-#akuma:hover {
-opacity:1.0;
-filter:alpha(opacity=100);
-}
-
-
-#container {
+#smol {
+position:absolute;
+top: 8.5vh;
+left: 15.5vh;
+width: 450px;
+height: 200px;
+background-color: rgba(0, 0, 0, 0.3);
+font-family: Bitter;
+font-size: 13px;
+color: #C0C0C0;
+text-align: justify;
+line-height: 125%;
+letter-spacing: 1px;
+word-spacing: 2px;
+margin-bottom: 35px;
+border-radius: 10px;
+padding: 7px;
+overflow: auto;}
+ 
+ 
+/*-Navigation-*/
+ 
+#nav {
 position: fixed;
-width: 400px;
-height: 400px;
-overflow: auto;
-left: 500px;
-top: 100px;
-background-color: #000000;
-}
+top: 63vh;
+left: 68.5vh;
+text-align: justify;}
+
+ 
 
 
-#text {
-position:fixed;
-height: 105px;
-width:303px;
-overflow:hidden;
-left:550px;
-top:10px;
-border: 1px #000000 solid;
-background-color: #;
-}
+/*-Images-*/
 
-h1{
-	margin: 0px;
-	padding-right: 0px;
-	text-decoration: none;
-	font-family: Times new roman;
-	color: #551111;
-	font-size: 18px;
-	font-weight: none;
-	font-style: none;
-	letter-spacing: 1px;
-	background: #000000;
-	border-bottom: 0px solid #666666;
-	text-transform: ;
-	text-align: center;
-	margin-bottom: 0px;
-	margin-top: 0px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	padding-right: 0px;
-	border-bottom: 2px dash #666666;
-text-shadow: #555555 2px 2px 2px;
-	}
+#deity {
+position: fixed;
+top: 1.2vh;
+left: 69vh;
+height: 564px;
+width: 616px;
+background-image: url("https://i.imgur.com/isFO2NV.png");
+background-size: ;
+background-position:;
+background-repeat: no-repeat;
+
+opacity: 0.7;
+transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;}
+ 
+#deity:hover {
+opacity: 1.0;
+transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;}
+
+/*-Friend Tabs-*/
+ 
+#friends {
+position: absolute;
+top: 375px;
+left: 350px;
+height: 67px;
+width: 350px;
+background-color: #000;
+border: 0px dotted #8a0303;}
+ 
+th {
+height: 10px;
+width: 85px;
+background-color: #000;
+font-family: arial;
+font-weight: normal;
+font-variant: small-caps;
+font-size: 75%;
+ 
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;}
+ 
+th:hover {
+background-color: #8a0303;
+ 
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;}
+ 
+ 
+/*-Script-*/
+ 
+a {color: #8a0303;
+ 
+transition: all 1.0s ease-in-out;
+-webkit-transition: all 1.0s ease-in-out;
+-moz-transition: all 1.0s ease-in-out;
+-o-transition: all 1.0s ease-in-out;
+-ms-transition: all 1.0s ease-in-out;}
+ 
+a:hover {color: #fff;
+ 
+transition: all 1.0s ease-in-out;
+-webkit-transition: all 1.0s ease-in-out;
+-moz-transition: all 1.0s ease-in-out;
+-o-transition: all 1.0s ease-in-out;
+-ms-transition: all 1.0s ease-in-out;}
+ 
+h1 {
+border-bottom: 1px solid #000;
+text-align: left;
+line-height: 16px;
+font-family: verdana;
+font-variant: small-caps;
+font-size: 12px;
+color: #fff;
+text-shadow: 1px 1px 20px #C0c0c0;
+overflow: auto;}
+ 
+.stat{
+padding-left: 6px;
+padding-right: 6px;
+height: 13px;
+width: 117px;
+background-color: #000;
+color: #fff;
+text-align: center;
+font-family: Times;
+font-size: 14px;
+font-variant: small-caps;
+line-height:14px;
+margin-top: 4px;
+margin-bottom: 4px;
+border-radius: 100px;}
+ 
 </style>
-<div id="text">
-<img src="http://blog.flamingtext.com/blog/2012/07/05/flamingtext_com_1341462199_87868462.png">
+
+<div id="nav">
+<span class="stat">Tobias</span><br><br>
+<span class="stat">Eighteen</span><br><Br>
+<span class="stat">Human/Aetherian</span><br><br>
+<span class="stat">Male</span><br><br>
+<span class="stat">5'11/210</span><br><br>
+<span class="stat">Martial Artist</span><br><br>
+<span class="stat">Heterosexual</span><br><br>
+<span class="stat">Neutral Good</span><br><br>
+<span class="stat">Single</span><br><br></div>
+<div id="deity"></div>
+<div id="content">
+<div id="OOC"><span class="stat">PM Friendly</span>
+<span class="stat">Dark Themes</span>
+<span class="stat">Story or Smut</span><br>
+<span class="stat">LT > ST</span>
+<span class="stat">T1 or Story</span>
+<span class="stat">Respect is earned</span><br>
+<span class="stat">DM or Room RP</span>
+<span class="stat">Story or Smut</span>
+<span class="stat">No drama unless IC</span><br>
+<span class="stat">No contact outside RPC</span>
+<span class="stat">Brackets for OOC</span>
+<span class="stat">RL > RPC</span>
 </div>
+<div id="smol">
+<h1>Backstory</h1>
+Tobias as a child was branded with the mark of the flying Raijin, a symbol of his heritage and traditions. His father was a very passionate and merciless instilled hard love and lessons of extreme discipline early on in his life. This had a negative effect on his psyche, twisting his logic and ideologies for better or worse . His mother and older sister are the lights of his life, often showing him compassion and genuine love which helped teach him right from wrong. 
+When he started attending school he got into fights with the kids who tried to bully him, and naturally using his father’s fighting lessons he destroyed those bullies without mercy. Delivering fierce and powerful blows that would destroy those normal kids. Toby was much stronger and tougher than any nine year old in his school, and that trend would follow him as he aged and lived his life. However, while he was in fifth grade, he was pulled from his school and moved to a school for the physically and martially gifted called Taiyo Academy. This offered Tobias a new challenge, as the students here were as strong or stronger than he was. Excited by his new home, as it required him to live on campus; a fiery determination was born inside him, he’d work hard to push himself mentally, physically, and spiritually to achieve new greater heights of power. He’d make many friends while he attended Taiyo, but ultimately, that was all left behind after he graduated. Anyone who wanted to maintain their friendship with him was encouraged to find him in the heat of battle.<br><br>
+ ”I’m going to be the Street Fighter World Champion!”
+<br><br>
 
-
-<a onClick="if( document.getElementById('container').style.display == 'none') { document.getElementById('container').style.display = 'block'; } else { document.getElementById('container').style.display = 'none'; } return false; " class='links'>
-<img src="http://officialpsds.com/images/thumbs/Street-Fighter---Akuma-Back-psd29310.png" style="position: fixed; left: 550px; top: 100px;"></a>
-
-<div id="container" class='contents' style="display: none;">
-<center>
-<b>Name:</b> Akuma/<i>Gouki</i><br>
-<b>Meaning:</b> Demon, Devil. <i>Great Demon/Ogre/Devil</i><br>
-<b>Birth date:</b> Unknown<br>
-<b>Birth place:</b> Unknown<br>
-<b>Height:</b> 5'10<br>
-<b>Weight:</b> 176lbs<br>
-<b>Eye color:</b> Red<br>
-<b>Hair color:</b> Red<br><br>
-
-<h1>天 History</h1>
-Akuma and his brother Gouken were students of Goutetsu. Goutetsu taught a nameless life-threatening martial art, which incorporates elements of Karate, Judo, and Kempo. He also taught the Shun Goku Satsu (literally Instant Hell Murder), a lethal technique which, although incredibly powerful, puts the user in considerable danger.<br><br>
-
-As the brothers progressed under Goutetsu's tutelage, a dispute arose on the true nature of their fighting style and the path to master it. Gouken, unable to accept the violent nature and the Satsui no Hadou of his fighting style, left Goutetsu to begin his own dojo, however Goutetsu did not stop his student Gouken from leaving and even allowed him build his own dojo. Akuma continued Goutetsu's teachings and vowed to use their fighting style as it was intended.<br><br>
-
-In order to learn Shun Goku Satsu, Akuma embraced the principle of Satsui no Hadō, the "Surge of the Intent to Kill/Killing Intent". Through Satsui no Hadō, Akuma was forced to give up any compassion he held towards other human beings. In addition, Akuma realized his limits as a martial artist could be expanded, and left Goutetsu's guidance of enlightenment to train alone to gain more power; however, due to embracing the Satsui no Hadou to his fullest extent, he developed a lust to fight to the death, unlike Goutetsu, who had been able to use the Satsui no Hadou without giving in to its dark side and did not constantly use it to its fullest extent.<br><br>
-
-After coming back from his island, Akuma went back to Goutetsu, and fought and killed him with the Shun Goku Satsu. Akuma, believing that he was the true master of the Art, took the prayer beads of his dead master and placed it on his neck. When Gouken went to visit his master to see how he was doing, he only found his body lifeless and saw his brother, now no longer looking human. Gouken, shocked to see that his younger brother took the life of their master, berated Akuma, who said nothing and left for the woods.<br><br>
-
-Many years later, Akuma fought Gouken, while the then-young duo of Ryu and Ken watched. Akuma told Gouken that he was not strong enough to face him without giving in the killing intent; Gouken retorted, saying the art was much more then just death and destruction, accusing Akuma of dishonoring their master's name. Akuma told his brother that Goutetsu did not truly understand the art and was a fool for not using the Satsui no Hadou to its fullest extent. The fight continued, and Gouken won. Akuma told his brother to kill him, but Gouken had no intention of murdering his own kin, prompting Akuma to call him weak for sparing the life of a strong opponent and declare that he would return.<br><br>
-
-A couple years later, Akuma came back to Gouken's dojo and fought him in battle, using the Shun Goku Satsu on him. Akuma believed him dead, not knowing that Gouken had somehow lived through the attack by emptying his soul, and was only in a coma. Ken saw the flash of the attack while running to the dojo, but arrived only to find Gouken on the floor. Knowing who was behind this, Ken confronted Akuma in the woods and fought him, only to be defeated. After defeating Ken, Akuma disappeared without a trace.<br><br> 
-
-<h1> 天 Personality</h1>
-Akuma (literally demon) is a cold and extremely powerful warrior whose sole purpose of existance is to hone his fighting skills by battling and destroying strong foes. He rarely displays any sign of emotions and likes to occasionally test himself against worthy rivals (Gen, Oro...). In combat, Akuma almost never resorts to his true strength since he is yet to find an opponent who is to withstand the full extent of his powers. <br><br>
-
-<h1> 天 Moral Code</h1>
-Most of the time, Akuma abides the code of the warrior. He fights to improve his skills, defeat powerful foes or, in rare occasions, to gauge other's abilities. Although he killed his teacher (Goutetsu) and believed he did the same with his brother (Gouken), Akuma did so in combat, and thus can be said to have not transgressed on his principles. He fights only warriors that he deems worthy or the ones he believes have the potential to become the best. He backed out of a duel with Gen once he found out that Gen is fatally ill. During the events of SFA2, Akuma fought Ryu only to gain insight on Ryu's abilities while during SF3 he faced Oro in order to test his own strength.<br><br>
-
-Although Akuma usually prefers an even bout, it is not uncommon for him to deliver a lethal sneak attack at an unprepared opponent (as he did with Bison, Gill and Adon's unnamed rival). The purpose of this can perhaps be found in the evil nature of Satsui no Hado itself which could have corrupted Akuma's ways.<br><br>
-
-<h1> 天 Out of Character</h1>
-• Fuck you.  Fuck your brother.  Fuck your sister.  Fuck your mom.  Fuck you.
-</center>
-</div>
+<h1>Personality</h1>
+Tobias is a hot headed guy full of explosive energy. He’s passionate about his family’s fighting spirit and techniques. He’s been hardened by his experiences at Taiyo middle school and at home, he was raised to speak his mind honestly even if that meant pissing off the opposition. He resorts to violence when disrespected and won’t hesitate to destroy anything or anyone who dare cross him. Though beneath all that 'perceived' abrasiveness he’s got a soft spot for those he deems worthy of his friendship. He’s determined to achieve his dreams, and constantly pushes himself beyond his limits. He travels the world as a free spirit to challenge strong opponents, no matter their shape or size.<br><br>
+<h1>Skills and Abilities</h1>
+<b>FIGHTING STYLE:</b> <u>The Planar Fist:</u> A mixed martial arts created by Tobias, it blends Hapkido, Muay Thai, and Jeet Kune Do(currently studying) with his planar abilities. It focuses on using his inhumane strength and speed to deliver decisive counter attacks and fluid offensive strikes once he’s learned how his opponent(s) fight. He’s a firm believer in using all of his body, he’s learned to move without wasting motion allowing him to generate obscene amounts of kinetic energy in short and tight spaces without the use of his planar vibrations. While his vibrational state is active the true potential of his body begins to emerge. 
+<br><br>
+Physical Capabilities: Tobias undergoes a strict training regimen to maintain and push the limits of his physique. Over forty percent of his muscle fibers have been turned into Pink Muscle. What is Pink Muscle? To explain this we’d need to explore Red and White Muscle. Red Muscle Fibers have low explosive power but high endurance allowing for long durations of use. White Muscle Fibers have high explosive power but have low endurance. Now pink muscle fibers have high explosive power, without loss in endurance. He believes this 40/30/30 split build offers him the most power for his stature and build, without the loss of endurance. He can deliver furious blows that can crumble several feet of reinforced concrete, punch through various reinforced metals, and total automobiles in just a few hits. Tobias’ movements are inhumane, often a blur to the untrained eye. While his resonance is active everything about him is exponentially multiplied. His basic senses are all amplified and considered animalistic and are also amplified during the vibrational state. 
+<br><br>
+Planar Resonance: As Tobias grew, he discovered a hum, a resonance that surfaced from his being as he trained and honed his mind, body and soul. Eventually what would manifest from his Aetherian soul, was a connection to the upper dimensions that would grant him powers beyond his wildest dreams. Troubled and confused he asked his Father about this phenomena. His father explained that there are beings born with pieces of Deus integrated into their genetic code, allowing them to manifest the Planar Resonance and remove their growth limiter. He also explained that people who manifest these abilities go on to do great things and influence the lives of many around them. It’s believed that many Aetherians existed throughout history. Tobias was encouraged to train with this ability and seek out individuals who have the ability to manifest the Resonance. 
+<br><br>
+There are four higher dimensions above the mortal plane, Physicallis, Mentallis, Astrallis, and Spirituallis. Each one represents a specific source of energy, though limitless, it has a strain on the physical body. 
+<br><br>
+Physicallis is kinetic energy in perpetual motion represented by the Earth, Tobias has only scratched the surface on his Resonance, thus he can only generate energy from this plane in small amounts. 
+<Br><br>
+Mentallis is Psionic Energy in perpetual motion, represented by the water element, it allows one to generate pockets of psionic energy within their mental resonance. This acts like telekinesis. Not yet unlocked.
+<br><br>
+Astrallis is Emotional Energy in perpetual motion, represented by the Lightning Element it allows one to gain access to the Emotional Spectrum, allowing one to generate power based on their emotions. Not yet unlocked.
+<br><br>
+Spirituallis is essentially the realm where souls are generated and thought to be the most powerful of the four. Can only be accessed once the previous three have been mastered. 
+<br><br>
+Affinity: The soul and resonance can generate a color based off their life experiences, emotional state, and morality. 
+<br><br>
+Tobias’ soul and resonance is black, black is regarded as the neutral color as those with this color can use all four of the resonance types equally. 
+<br><br>
+Notes: Tobias can detect another person Resonance through sight, sound, and his third eye alone. He can also discern what their affinity is based on those two senses alone. 
+<br><br>
+<a target="_blank" href="https://imgur.com/a/qWcn5l2">Gallery</a>
+<br>
+</div></div>
